@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="esquerda">
+
+            <div id="logo">
+                <img onclick="VoltarPerfil()" src="img/logo.png" alt="logo">
+            </div>
+
+            <nav id="a">
+                <ul>
+                    <li><a href="#">Voltar</a></li>
+                    <li><a href="#">Sua conta</a></li>
+                    <li><a href="#">Vizualições recente</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div id="line"></div>
+
+        <div id="direita">
+
+            <div id="direita-content">
+
+                <div id="title">
+                    <h2>Sua conta <br><span>Informações pessoais</span></h2>
+                </div>
+
+                <form>
+                    <div class="inputs">
+                        <label for="origem">Nome</label>
+                        <input type="text" placeholder="Nome da Pessoa">
+                    </div>
+                    <div class="inputs">
+                        <label for="origem">Sobrenome</label>
+                        <input type="text" placeholder="Sobrenome da Pessoa">
+                    </div>
+                    <div class="inputs">
+                        <label for="origem">E-mail</label>
+                        <input id="input-email" type="text" placeholder="E-mail da Pessoa">
+                    </div>
+                    <div class="inputs">
+                        <label for="origem">Senha</label>
+                        <input id="input-senha" type="text" placeholder="Senha da Pessoa">
+                    </div>
+                    
+                </form>
+
+                <div id="btn">
+                    <button onclick="SalvarPerfil()">MUDAR AS INFORMAÇÕES DA CONTA</button>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <script src="perfil.js"></script>
+
+</body>
+</html>

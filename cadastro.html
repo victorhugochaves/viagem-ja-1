@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViagemJá - Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+    
+  <div id="container">
+    <div id="esquerda">
+      <img src="img/image.png" alt="image" id="image1">
+      <div id="textos">
+        <h2>Sua próxima viagem começa aqui</h2>
+        <ul>
+
+          <li> Encontre passagens e hotéis com preços imbatíveis.</li>
+          <li> Sincronize suas buscas em todos os seus dispositivos.</li>
+          <li> Fique por dentro das melhores promoções em tempo real.</li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div id="meio">
+
+      <div id="image2">
+        <img onclick="VoltarCadastro()" src="img/logo.png" alt="LOGO">
+      </div>
+
+      <div id="info">
+        <h2>Entre para os associados e acesse mais ofertas</h2>
+        <p>Crie uma conta com o seu e-mail.</p>
+      </div>
+      
+      <div id="dados">
+        
+        <div id="form">
+
+          <label >Email</label>
+          <input type="email" id="emailInput" placeholder="Exemplo: GordãoDaXJ@gmail.com" required>
+
+          <label >Senha</label>
+          <input type="password" id="senhaInput" placeholder="Exemplo: 0900Va." required>
+
+          <button onclick="TrocarPerfil()">CADASTRAR</button>
+
+        </div>
+
+      </div>
+
+      <div id="divisoria">
+        <div class="line"></div>
+        <p>ou continue com</p>
+        <div class="line"></div>
+      </div>
+
+
+      <div id="outros">
+        <div id="escolha-conta">
+          <button id="google"> <img src="img/google.png" height="25px"></button>
+          <button id="apple"> <img src="img/apple.png" height="28px"></button>
+          <button id="facebook"><img src="img/facebook.png" height="25px"></button>
+        </div>
+          <p>
+          Ao criar uma conta, você concorda com a nossa <a href="#">Política  de privacidade</a> e os nossos <a href="#">Termos de uso</a>.
+          </p>
+      </div>
+      
+    </div>
+
+    <div id="direita">
+    </div>
+
+  </div>
+
+  <script src="cadastro.js"></script>
+
+</body>
+</html>

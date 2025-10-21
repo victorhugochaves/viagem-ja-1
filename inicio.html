@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViageJá</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+   
+    <div id="container">
+
+        <header>
+           
+            <div id="top-left">
+
+
+                <div id="content-left">
+                    <div id="logo">
+                        <img src="img/logo.png" alt="Logo">
+                    </div>
+                    <nav id="nav-bar">
+                        <ul>
+                            <li><a href="#">HOTÉIS</a></li>
+                            <li><a href="#">VOOS</a></li>
+                            <li><a href="#">OFERTAS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+               
+            </div>
+
+
+
+
+            <div id="top-right">
+                <div id="btn">
+                    <button id="btn1" onclick="Login()">Acessar conta</button>
+                    <button id="btn2" onclick="Cadastro()">Criar conta</button>
+                </div>
+            </div>
+
+
+        </header>
+
+
+
+
+        <main>
+
+
+
+            <div id="shop">
+
+
+                <div id="container-shop">
+                    <div id="shop-top">
+                        
+                        <div id="content-shop">
+                            
+                            <select>
+                                <option>Ida e volta</option>
+                                <option>Apenas ida</option>
+                            </select>
+                          
+                            <select>
+                                <option>1 Adulto</option>
+                                <option>2 Adultos</option>
+                                <option>3 Adultos</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    
+                    <div id="shop-bottom">
+
+                        <div id="input-left">
+
+                            <div class="inputs">
+                                <label for="origem">Origem</label>
+                                <input type="text" id="origemInput" list="listaEstados" placeholder="Digite a cidade">
+                            </div>
+                              
+                            <div class="inputs">
+                                <label for="destino">Destino</label>
+                                <input type="text" id="destinoInput" list="listaEstados" placeholder="Digite a cidade">
+                            </div>
+                            
+                            <datalist id="listaEstados">
+                                
+                            </datalist>
+
+                        </div>
+
+                        <div id="input-right">
+
+                            <div class="inputs" id="busca">
+                                <label for="ida">Ida</label>
+                                <input type="date" id="input-ida">
+                            </div>
+                              
+                            <div class="inputs" id="busca">
+                                <label for="volta">Volta</label>
+                                <input type="date" id="input-volta">
+                            </div>
+    
+                        </div>
+
+                        <div class="bnt">
+                            <button id="btn3" onclick="TrocaPagina()">BUSCAR VOOS</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div id="carrossel-container">
+
+                <div class="carrossel">
+                    <div class="slides">
+                      <img src="img/Inteleigência Faz a gente voar (1).png" alt="Imagem 2">
+                      <img src="img/Inteleigência Faz a gente voar (2).png" alt="Imagem 3">
+                      <img src="img/beto.png" alt="Imagem 4">
+                      <img src="img/resort.png" alt="imagem 5">
+                    </div>
+                </div>
+    
+            </div>
+
+
+
+
+            <div id="card">
+
+
+                <div id="title-card">
+                    <h2>Ofertas da Semana</h2>
+                </div>
+
+                <div id="content-card">
+
+                    <div class="cards">
+                        <img src="img/rs.png" alt="">
+                        <div class="dados-card">
+                            <h4>Rio Grande do Sul (RS)</h4>
+                            <p>DATA DA VIAGEM DE IDA <br>31/10/2025 <br><b>Por R$719,02</b> <br> Só ida ou volta</p>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <img src="img/rj.png" alt="">
+                        <div class="dados-card">
+                            <h4>Rio de Janeiro (RJ)</h4>
+                            <p>DATA DA VIAGEM DE IDA <br>11/10/2025 <br><b>Por R$1024,84</b> <br> Só ida ou volta</p>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <img src="img/br.png" alt="">
+                        <div class="dados-card">
+                            <h4>Brasília (BSB)</h4>
+                            <p>DATA DA VIAGEM DE IDA <br>30/10/2025 <br><b>Por R$1300,02</b> <br> Só ida ou volta</p>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <img src="img/poa.png" alt="">
+                        <div class="dados-card">
+                            <h4>Porto Alegre (POA)</h4>
+                            <p>DATA DA VIAGEM DE IDA <br>27/11/2025 <br><b>Por R$169,02</b> <br> Só ida ou volta</p>    
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+       
+        </main>
+
+
+
+
+        <footer>
+
+            <div id="footer-content">
+                <p>&copy; 2025 ViageJá - CNPJ: 00.000.000/0001-00 - Todos os direitos reservados.</p>
+            </div>
+
+        </footer>
+
+    
+    </div>
+   
+    <script src="inicio.js"></script>
+
+</body>
+</html>

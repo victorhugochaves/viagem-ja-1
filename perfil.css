@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: red;
+}
+
+#container{
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+}
+
+#esquerda{
+    height: 100%;
+    width: 20%;
+}
+
+li{
+  height: 60px;
+}
+
+#logo{
+    height: 25%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    height: 220px;
+}
+
+
+nav{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+#line{
+  height: 100%;
+  width: 0.1%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+#senha, #email{
+    height: 30px;
+    width: 100%;
+    border: #000 2px solid;
+}
+
+#direita{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#direita-content{
+    height: 100%;
+    width: 40%;
+}
+
+#title{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+#title span{
+    font-size: 17px;
+}
+
+form{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+label{
+    color: #000;
+    font-weight: bold;
+}
+
+input{
+    height: 35%;
+    width: 98%;
+    border-radius: 5px;
+    border: 0.5px solid #4C4C40;
+    font-weight: 700;
+    color: #000;
+    padding-left: 10px;
+}
+
+#btn{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 30%;
+    width: 100%;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+/* ------------------- Responsividade ------------------- */
+
+/* ----------------------- tablet ----------------------- */
+@media (max-width: 829px) {
+
+    #esquerda{
+        height: 100%;
+        width: 25%;
+      }
+    
+      #direita{
+        height: 100%;
+        width: 75%;
+      }
+
+    a{
+        font-size: 20px;
+    }
+
+    #logo{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #logo img{
+        height: 180px;
+    }
+
+    button{
+        height: 30%;
+        width: 100%;
+        font-size: 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+
+/* ----------------------- celular ----------------------- */
+
+@media (max-width: 480px) {
+
+  #esquerda{
+    display: none;
+  }
+
+  #line{
+    display: none;
+  }
+
+  #direita{
+    height: 100%;
+    width: 100%;
+  }
+
+  #title{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#titulo{
+    width: 71%;
+}
+
+.inputs{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  #direita-content {
+      width: 100%; 
+  }
+
+  input {
+      width: 70%; 
+  }
+
+  button {
+      font-size: 12px;
+      width: 70%;
+      height: 35%;
+  }
+
+  label{
+    width: 71%;
+}
+
+}

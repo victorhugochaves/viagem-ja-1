@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar-Voos</title>
+    <link rel="stylesheet" href="buscar.css">
+    <script src="inicio.js" defer></script>
+</head>
+<body onload="MensagemDeBusca()">
+
+
+    <div id="container">
+
+        <header>
+
+            <div id="logo">
+                <img onclick="VoltarBusca()" src="img/logo.png" alt="LOGO">
+            </div>
+
+            <div id="inputs">
+
+                <div class="inputs2">
+                    <label for="origem2">ORIGEM</label>
+                    <input type="text" id="origem2">
+                </div>
+                  
+                <div class="inputs2">
+                    <label for="destino2">DESTINO</label>
+                    <input type="text" id="destino2">
+                </div>
+                
+                <div class="inputs2">
+                    <label for="ida2">IDA</label>
+                    <input type="date" id="ida2">
+                </div>
+                
+                <div class="inputs2">
+                    <label for="volta2">VOLTA</label>
+                    <input type="date" id="volta2">
+                </div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div id="main-container">
+
+                <div id="voo">
+                        
+                        <div class="voos">    
+                            <div id="dados">
+                                <h2>06:25</h2>
+                                <p id="meuP1"></p>
+                            </div>
+                            <div id="dados">
+                                <h2>12:15</h2>
+                                <p id="meuP2"></p>
+                            </div>
+                        </div>
+
+                        <div class="voos">
+                            <div id="dados">
+                                <h2>11:40</h2>
+                                <p id="meuP3"></p>
+                            </div>
+                            <div id="dados">
+                                <h2>18:30</h2>
+                                <p id="meuP4"></p>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div id="planos">
+
+                    <div class="content-planos">
+
+                        <div class="text-planos">
+                            <h3>Light</h3>
+                            <p>VOO <img src="img/sim.png" alt="" height="20px" width="20px"></p>
+                            <p>HOTEL <img src="img/nao.png" alt="" height="20px" width="20px"></p>
+                            <p>CRONOGRAMA <img src="img/nao.png" alt="" height="20px" width="20px"></p>
+                            <h3>BRL789,90</h3>
+                        </div>
+                        
+                    </div>
+
+                    <div class="content-planos">
+                        <div class="text-planos">
+                            <h3>Standard</h3>
+                            <p>VOO <img src="img/sim.png" alt="" height="20px" width="20px"></p>
+                            <p>HOTEL <img src="img/sim.png" alt="" height="20px" width="20px"></p>
+                            <p>CRONOGRAMA <img src="img/nao.png" alt="" height="20px" width="20px"></p>
+                            <h3>BRL999,90</h3>
+                        </div>
+                    </div>
+
+                    <div class="content-planos">
+                        <div class="text-planos">
+                            <h3>Full</h3>
+                            <p>VOO <img src="img/sim.png" alt="" height="20px" width="20px"></p>
+                            <p>HOTEL <img src="img/sim.png" alt="" height="20px" width="20px"></p>
+                            <p>CRONOGRAMA <img src="img/sim.png" alt="" height="20px" width="20px"></p>
+                            <h3>BRL1290,90</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="value">
+
+                    <div id="content-value">
+                        <h2>BRL789,90</h2>
+                        <button onclick="Pagar()">PAGAR</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        
+
+    </div>
+
+    <script src="busca.js"></script>
+
+</body>
+</html>

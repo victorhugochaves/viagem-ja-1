@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViagemJá - Login</title>
+  <link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+    
+  <div id="container">
+    <div id="esquerda">
+      <img src="img/image.png" alt="image" id="image1">
+      <div id="textos">
+        <h2>Sua próxima viagem começa aqui</h2>
+        <ul>
+
+          <li> Encontre passagens e hotéis com preços imbatíveis.</li>
+          <li> Sincronize suas buscas em todos os seus dispositivos.</li>
+          <li> Fique por dentro das melhores promoções em tempo real.</li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div id="meio">
+
+      <div id="image2">
+        <img onclick="VoltarCadastro()" src="img/logo.png" alt="LOGO">
+      </div>
+
+      <div id="info">
+        <h2>Como é bom te ver aqui novamente</h2>
+        <p>Faça seu login com seus dados anteriores.</p>
+      </div>
+      
+      <div id="dados">
+        
+        <div id="form">
+
+          <label >Email</label>
+          <input type="email" id="emailInput" placeholder="Exemplo: GordãoDaXJ@gmail.com" required>
+
+          <label >Senha</label>
+          <input type="password" id="password" placeholder="Exemplo: 0900Va." required>
+
+          <button onclick="TrocarPerfil()">CADASTRAR</button>
+
+        </div>
+
+      </div>
+
+      <div id="divisoria">
+        <div class="line"></div>
+        <p>ou continue com</p>
+        <div class="line"></div>
+      </div>
+
+
+      <div id="outros">
+        <p>
+          Não tem uma conta ainda?<a href="cadastro.html"> FAÇA SEU CADASTRO AQUI</a>
+        </p>
+      </div>
+      
+    </div>
+
+    <div id="direita">
+    </div>
+
+  </div>
+
+  <script src="cadastro.js"></script>
+
+</body>
+</html>
